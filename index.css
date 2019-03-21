@@ -9,6 +9,8 @@ body {
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
+
+    border: 2px solid #000000;
 }
 
 .myName{
@@ -51,7 +53,7 @@ body {
     width:500px;
     height: 230px;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(100, 236, 145, 0.966);
+    background-color: rgba(133, 230, 165, 0.575);
     /* border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2); */
     display: none;
@@ -68,17 +70,20 @@ body {
 
 .hs2{
     position: absolute;
-    width:800px;
+    width:600px;
     height: 230px;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(39, 41, 40, 0.726);
+    background-color: rgba(39, 41, 40, 0.89);
     /* border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2); */
     display: none;
 }
 
 .ex{
+    padding-top:2%;
+    padding-left:2%;
     float: left;
+    width: 45%;
 }
 
 .hsname{
@@ -88,6 +93,7 @@ body {
 }
 
 .hsrow{
+    margin-top: 3%;
     margin-left: 3%;
     margin-bottom: 5%;
     width:70px;
@@ -108,6 +114,28 @@ body {
     background-color: black;
 }
 
+.exname{
+    font-size: 30px;
+    color: RGB(255,255,255);
+}
+
+.exsit{
+    font-size: 20px;
+    color: RGB(255,255,255);
+}
+
+.exrow{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width:70px;
+    height:5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.extime{
+    color: RGB(255,255,255);
+    font-size: 25px;
+}
 .SEbar{
     margin-left: 1%;
     margin-bottom: 10%;
@@ -141,4 +169,19 @@ body {
     border: 1px solid #ddd;
     border: 1px solid rgba(86,61,124,.2)
 
+}
+
+.project-item{
+    height: 500px;
+    border: 1px solid #000000;
+}
+
+.project-row{
+    width: 100%;
+}
+
+.project-c{
+    padding-left:0;
+    padding-right:0;
+    margin: 0 auto;
 }
