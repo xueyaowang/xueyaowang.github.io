@@ -25,6 +25,14 @@
         //alert($("body").height());
         //alert("fuck too~");
       });
+
+      $(".AMbar").hover(function(){
+        $(".hs1").stop().slideDown(200);
+      },
+      function(){
+        $(".hs1").stop().slideUp(200);
+      }
+      );
     </script>
   </head>
 
@@ -64,58 +72,67 @@
 
 
         <div class="FourParts">
+          
           <div class="row">
-            <div class="col-md-1">
-              <div class="AMbar">
+            <div class="col-md-2">
+              <div class="AMbar hover1">
+                  <div class="hs1">
+                    <div class="hsname">王雪瑶</div>
+                    <div class="hsrow"></div>
+                    <div class="hsam">
+                      95后 / 宅 /<br>
+                      喜欢艺术的理科生 / 不靠颜值靠才华的天秤座 / <br>
+                      业余手绘 / 业余舞蹈<br>
+                    </div>
+                  </div>
               </div>
+              <div class="AMtext"> About Me</div>
             </div>
           </div>
-          <div class="row">
-              <div class="col-md-2">About Me</div>
-          </div>
 
-          <div class="row Opart">
-              <div class="col-md-1 col-md-offset-6">
-                <div class="EXbar"></div>
-              </div>
-          </div>
           <div class="row">
-              <div class="col-md-2 col-md-offset-6">Experience</div>
-          </div>
-          <!--
-          <div class="row Opart">
-            <div>
-                <div class="col-md-2 col-md-offset-2">
-                  <div class="PRbar"></div>
-                  <div class="PRtext">Project</div>
+            <div class="col-md-2 col-md-offset-6">
+              <div class="EXbar hover2">
+                <div class="hs2">
+                  <div class="ex">
+                    <div class="exname">
+                      RR Donnelley
+                    </div>
+                    <div class="exsit">
+                      Creative Designer
+                    </div>
+                    <div class="exrow"></div>
+                    <div class="extime">2017-2019</div>
+                  </div>
+                  <div class="ex">
+                      <div class="exname">
+                        湖南工业大学
+                      </div>
+                      <div class="exsit">
+                        印刷工程专业 / 印前设计方向
+                      </div>
+                      <div class="exrow"></div>
+                      <div class="extime">2013-2017</div>
+                    </div>
+                  <div></div>
                 </div>
-            </div>
 
-            <div>
-              <div class="col-md-3 col-md-offset-4">
-                  <div class="SEbar"></div>
-                  <div>Something Else</div>
               </div>
+              <div class="EXtext"> Experience </div>
             </div>
-          </div>
-          -->            
-
-
-          <div class="row Opart">
-              <div class="col-md-1 col-md-offset-8">
-                <div class="SEbar"></div>
-              </div>
           </div>
           
           <div class="row">
-              <div class="col-md-1 col-md-offset-2"><div class="PRbar"></div></div>
-              <div class="col-md-3 col-md-offset-5 SEtext">Something Else</div>
+            <div class="col-md-1 col-md-offset-2">
+              <div class="PRbar"></div>
+              <div> Project </div>
+            </div>
+            <div class="col-md-3 col-md-offset-5">
+              <div class="SEbar"></div>
+              <div>Something Else</div>
+            </div>
           </div>
-
-          <div class="row">
-              <div class="col-md-2 col-md-offset-2 PRtext">Project</div>
-          </div>       
- 
+          
         </div>
     </div><!-- /.container -->
   </body>
