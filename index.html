@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Designer XUEYAO WANG</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
+    <script src="bootstrap.min.js"></script>
+
+    <script>
+      //alert("fuck~");
+      $(document).ready(function(){
+        var width = $(window).width();
+        //alert(width);
+        $("body").css("height",width * 2);
+        //alert($("body").height());
+        //alert("fuck too~");
+      });
+    </script>
   </head>
 
   <body>
@@ -37,18 +52,71 @@
     </nav>
 
     <div class="container">
+        <div>
+          <div class="myName">XUEYAO WANG</div>
+          <!--<div class="row">
+            <div class="col-md-2 col-md-offset-4 CrDe">Creative</div>
+            <div class="col-md-2 CrDe">Designer</div>
+          </div>-->
+          <div class="CrDe">Creative Designer</div>
+        </div>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
 
+
+        <div class="FourParts">
+          <div class="row">
+            <div class="col-md-1">
+              <div class="AMbar">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-2">About Me</div>
+          </div>
+
+          <div class="row Opart">
+              <div class="col-md-1 col-md-offset-6">
+                <div class="EXbar"></div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-2 col-md-offset-6">Experience</div>
+          </div>
+          <!--
+          <div class="row Opart">
+            <div>
+                <div class="col-md-2 col-md-offset-2">
+                  <div class="PRbar"></div>
+                  <div class="PRtext">Project</div>
+                </div>
+            </div>
+
+            <div>
+              <div class="col-md-3 col-md-offset-4">
+                  <div class="SEbar"></div>
+                  <div>Something Else</div>
+              </div>
+            </div>
+          </div>
+          -->            
+
+
+          <div class="row Opart">
+              <div class="col-md-1 col-md-offset-8">
+                <div class="SEbar"></div>
+              </div>
+          </div>
+          
+          <div class="row">
+              <div class="col-md-1 col-md-offset-2"><div class="PRbar"></div></div>
+              <div class="col-md-3 col-md-offset-5 SEtext">Something Else</div>
+          </div>
+
+          <div class="row">
+              <div class="col-md-2 col-md-offset-2 PRtext">Project</div>
+          </div>       
+ 
+        </div>
     </div><!-- /.container -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
