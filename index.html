@@ -11,6 +11,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <link href="project.css" rel="stylesheet">
 
     <script src="jquery-3.3.1.min.js"></script>
     <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
@@ -22,22 +23,50 @@
         var width = $(window).width();
         //alert(width);
         $("body").css("height",width * 2);
+        //$(".project-c").css("width", width*0.9);
         //alert($("body").height());
         //alert("fuck too~");
-      });
+        //alert($(".project-c").width());
 
-      $(".AMbar").hover(function(){
-        $(".hs1").stop().slideDown(200);
-      },
-      function(){
-        $(".hs1").stop().slideUp(200);
-      }
-      );
+        var modal = $('#myModal_1');
+      
+        var img = $("#myImg1");
+        //alert(img.width());
+        var modalImg1 = $("#img01");
+        //alert(modalImg1);
+        var modalImg2 = $("#img02");
+        var modalImg3 = $("#img03");
+
+        img.click(function(){
+          //alert(this.src);
+          $('#myModal_1').css('display','block');
+          //alert("1231231");
+          $("#img01").attr("src","img/website-2-1.jpg");
+          $("#img02").attr("src","img/website-3-1.jpg");
+          $("#img03").attr("src","img/website-4-1.jpg");
+          //alert($("#img03").attr("src"));
+        });
+
+        //alert($("#close_1").css('display'));
+
+        $("#close_1").click(function(){
+          $('#myModal_1').css('display','none');
+        });
+
+        $(".AMbar").hover(
+          function(){
+            $(".hs1").stop().slideDown(200);
+          },
+          function(){
+            $(".hs1").stop().slideUp(200);
+          }
+        );
+      });
     </script>
   </head>
 
   <body>
-
+    <!--
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -55,9 +84,10 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
+    -->
 
     <div class="container">
         <div>
@@ -133,7 +163,79 @@
             </div>
           </div>
           
-        </div>
+        </div>    
     </div><!-- /.container -->
+    
+    <div class="container-fluid ">
+        <div class="row-fluid row">
+          <div class="col-md-2 col-md-offset-2">
+              <div class="project-item" id="modal-1">
+                  <img id="myImg1" src="img/website-2-1.jpg" alt="snow" style="width:100%, display:none">
+                  <div class="modal" id="myModal_1">
+                    <span class="close" id="close_1">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <img class="modal-content" id="img02">
+                    <img class="modal-content" id="img03">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2 project-item"></div>
+          <div class="col-md-2 project-item"></div>
+          <div class="col-md-2 project-item"></div>
+        </div>
+        <div class="row-fluid row">
+          <div class="col-md-2 col-md-offset-2 project-item"></div>
+          <div class="col-md-2 project-item"></div>
+          <div class="col-md-2 project-item"></div>
+          <div class="col-md-2 project-item"></div>
+        </div>
+
+
+
+      <!--
+        <div class="row-fluid row">
+            <div class="col-md-12 " style="background-color:  #00B7EE;">
+                123123123
+            </div>
+        </div>
+        <div class="row-fluid row">
+            <div class="col-md-2" style="background-color:  #218838;">
+                asdasddasd
+                
+            </div>
+            <div class="col-md-10 " >
+                    <div id="map" class=""></div>
+            </div>
+        </div>
+    </div>
+    -->
+    <!--
+    <div class="project-c">
+        <div class="project-row">
+          <div class="project-item" id="modal-1">
+            <div class="modal-content">
+              <span class="close" id="close_1">&times;</span>
+              <img id="Img1_1" src="img/website-2-1.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-2.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-3-1.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-3.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-4-1.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-4.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-5-1.jpg" alt="1", style="widows: 100%">
+              <img id="Img1_2" src="img/website-5.jpg" alt="1", style="widows: 100%">
+            </div>
+          </div>
+          <div class="project-item" id="modal-2"></div>
+          <div class="project-item" id="modal-3"></div>
+          <div class="project-item" id="modal-4"></div>
+        </div>
+        <div class="project-row">
+          <div class="project-item" id="modal-5"></div>
+          <div class="project-item" id="modal-6"></div>
+          <div class="project-item" id="modal-7"></div>
+          <div class="project-item" id="modal-8"></div>
+        </div>
+      </div>
+      -->
   </body>
 </html>
