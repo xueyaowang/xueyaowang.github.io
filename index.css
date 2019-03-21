@@ -39,14 +39,14 @@ body {
     background-color: black;
 }
 
-.hover1:hover .hs1{
+/* .hover1:hover .hs1{
     display: block;
     z-index: 1;
 }
 
 .hover1:hover +.AMtext{
     z-index: -1;
-}
+} */
 
 .hs1{
     position: absolute;
@@ -59,14 +59,14 @@ body {
     display: none;
 }
 
-.hover2:hover .hs2{
+/* .hover2:hover .hs2{
     display: block;
     z-index: 1;
 }
 
 .hover2:hover +.EXtext{
     z-index:-1;
-}
+} */
 
 .hs2{
     position: absolute;
